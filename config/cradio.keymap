@@ -21,6 +21,9 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+        ouput {
+            &out OUT_BLE
+        };
         bindings = <
     };
 
@@ -35,7 +38,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = < &out OUT_BLE
+            bindings = < 
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
