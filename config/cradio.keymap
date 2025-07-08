@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 &out {
     2
-}
+};
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
