@@ -6,8 +6,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-&out OUT_BLE
-
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
@@ -23,6 +21,7 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+        bindings = <
     };
 
     conditional_layers {
@@ -36,7 +35,7 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            bindings = <
+            bindings = < &out OUT_BLE
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
